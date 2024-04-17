@@ -3,8 +3,10 @@ import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { GoSearch } from "react-icons/go";
+import { useSelector } from "react-redux";
 
 export default function Header() {
+    const bagItems = useSelector((store) => store.bagItems)
     return (
         <header>
             <div className="logo_container">
@@ -36,7 +38,7 @@ export default function Header() {
                 <Link className="action_container" to="/bag">
                     <span className="material-symbols-outlined action_icon" style={{ marginTop: "17px" }}><HiOutlineShoppingBag /></span>
                     <span className="action_name">Bag</span>
-                    <span className="bag-item-count">0</span>
+                    <span className="bag-item-count">{bagItems.length}</span>
                 </Link>
             </div>
         </header>
