@@ -209,14 +209,31 @@ header {
     margin-left: 5px;
 }
 .btn-add-bag {
-    margin-top: 8px;
-    font-size: 18px;
-    width: 100%;
-    background-color: lightgreen;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 10px;
-    cursor: pointer;
+  height: 52px;
+  margin-top: 8px;
+  font-size: 18px;
+  width: 100%;
+  background-color: #ff527b;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  text-decoration: none;
+}
+.btn-icon {
+  margin-top: 7px;
+  margin-left: 8px;
+}
+.icon-btn {
+  margin-top: 3px;
+  margin-right: 9px;
 }
 .bag-item-count {
     background-color: #f16565;
