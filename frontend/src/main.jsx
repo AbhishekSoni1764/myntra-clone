@@ -7,6 +7,7 @@ import Bag from './routes/Bag.jsx';
 import "./App.css"
 import { Provider } from 'react-redux';
 import myntraStore from './store/index.js';
+import ErrorPage from './components/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
         element: <Bag />,
       },
     ],
+    errorElement: <ErrorPage />
   },
 ]);
 
